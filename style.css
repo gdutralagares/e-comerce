@@ -253,6 +253,14 @@ header{
   color: #fff; 
   border: 2px solid #ff7411;
 }
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: #f1f1f1;
+  font-weight: 300;
+  margin-top: 20px;
+ }
 
 /*Responsive*/
 @media (max-width: 1080px){
