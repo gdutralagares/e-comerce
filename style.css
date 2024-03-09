@@ -45,17 +45,16 @@ header{
   padding: 20px 0;
 }
 .logo{
-  font-size: 1.1rem;
-  color: var(--text-color);
-  font-weight: 400;
+  width: 150px;
 }
 #cart-icon{
-  font-size: 1.8rem;
+  font-size: 2.0rem;
   cursor: pointer;
+  border-radius: 5px;
 }
 #cart-icon:hover{
-  color: #ebeff0;
-  background: var(--text-colorolor); 
+  color: #fff;
+  background:linear-gradient(to right top, #ffb84a, #ff7411); 
 }
 .cart{
   position: fixed;
@@ -129,20 +128,23 @@ header{
 .total-price{
   margin-left: 0.5rem;
 }
-.btn-buy{
+
+.btn-buy {
   display: flex;
   margin: 1.5rem auto 0 auto;
-  padding: 12px 20px;
-  border: none;
-  background: var(--text-color);
-  color: var(--bg-color);
+  background: linear-gradient(to right top, #ffb84a, #ff7411);
+  color: #000;
+  padding: 12px 22px;
+  border-radius: 2rem;
+  border: 4px solid #ffdda2;
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
 }
 .btn-buy:hover{
-  background: #ebeff0;
+  background: linear-gradient(to right top, #ffb84a, #f4e4bc);
   color: var(--text-colorolor); 
+  border: 4px solid #ff7411;
 }
 #close-cart{
   position: absolute;
@@ -160,6 +162,10 @@ header{
   font-weight: 600;
   text-align: center;
   margin-bottom: 1.5rem;
+  margin-top: 20px;
+}
+.section-title span{
+  border-bottom: 3px solid #F17E3A;
 }
 .shop{
   margin-top: 2rem;
@@ -181,6 +187,7 @@ header{
   width: 100%;
   height: auto;
   margin-bottom: 0.5rem;
+  border-radius: 5px;
 }
 .product-title{
   font-size: 1.1rem;
@@ -195,14 +202,57 @@ header{
   position: absolute;
   bottom: 0;
   right: 0;
-  background: var(--text-color);
+  background: #F17E3A;
   color: var(--bg-color);
   padding: 10px;
   cursor: pointer;
+  border-radius: 5px;
 }
 .add-cart:hover{
   background: hsl(29, 2%, 27%);
 }
+.newsletter{
+  display: grid;
+  justify-items: center;
+}
+.newsletter span{
+  border-bottom: 3px solid #F17E3A;
+}
+.newsletter form{
+  margin-top: 2rem;
+  display: flex;
+  background: #f4e4bc;
+  padding: 10px;
+  border-radius: 0.5rem;
+}
+.newsletter form .email-box{
+  width: 350px;
+}
+.newsletter form input{
+  border: none;
+  outline: none;
+  background: none;
+  color: #F17E3A;
+  font-size: 1rem;
+}
+.newsletter form .btn{
+  display: flex;
+  background: linear-gradient(to right top, #ffb84a, #ff7411);
+  color: #000;
+  padding: 4px 18px;
+  border-radius: 2rem;
+  border: 2px solid #ffdda2;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.newsletter form .btn:hover{
+  background: linear-gradient(to right top, #ffb84a, #f4e4bc);
+  color: var(--text-colorolor); 
+  border: 4px solid #ff7411;
+}
+
+/*Responsive*/
 @media (max-width: 1080px){
   .nav{
     padding: 15px;
