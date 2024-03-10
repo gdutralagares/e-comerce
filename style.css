@@ -278,6 +278,11 @@ header{
     margin-top: 2 rem !important;
   }
 }
+@media (max-width: 550px){
+  .newsletter form .email-box{
+    width: 200px;
+  }
+}
 @media (max-width: 400px){
   .nav{
     padding: 11px;
